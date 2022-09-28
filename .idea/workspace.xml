@@ -5,32 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/AuthServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/dto/request/DoLoginRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/dto/request/RegisterRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/exception/AuthManagerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/exception/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/repository/IAuthRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/repository/entity/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/repository/enums/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/utility/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/utility/ServiceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/NewUserCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/manager/IUserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/AddQuestionRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/AnswersRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/DoLoginRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/RegisterRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/response/GetAllUserResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/UserManagerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/AnswerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/AttendanceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/CompetitionQuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/CompetitionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/DegreeHoldersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/QuestionGroupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/ViewsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/Attendance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/Competition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/CompetitionQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/DegreeHolders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/QuestionGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/TableAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/entity/Views.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/enums/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/enums/StateOfAttendance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/enums/StateOfCompetition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/repository/enums/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/AnswerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/AttendanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/DegreeHoldersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/QuestionGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/ViewsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/utility/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/utility/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/dto/request/EditProfileRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/dto/request/NewUserCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/exception/UserManagerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/mapper/IUserProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/IUserProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/entity/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/service/UserProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/constants/ApiUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/dto/request/DoLoginRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/DoLoginRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/dto/request/RegisterRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/RegisterRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/exception/AuthManagerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/exception/AuthManagerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/exception/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/exception/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/exception/ErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/repository/IAuthRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/repository/IAuthRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/repository/entity/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/repository/entity/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/repository/enums/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/repository/enums/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/utility/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hande/utility/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/ServiceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +101,67 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/auth-service">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Microservice" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Microservice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Microservice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Microservice" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Microservice" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dependencies.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/settings.gradle" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -83,22 +192,77 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/MICROSERVİCES/Microservice/src/main/java/com/hande/exception"
+    "last_opened_file_path": "C:/MICROSERVİCES/Microservice/main-service/src/main/java/com/hande",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "08914e26152e7d13339173a77984b0e7"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\MICROSERVİCES\Microservice\src\main\java\com\hande\exception" />
-      <recent name="C:\MICROSERVİCES\Microservice\src\main\java\com\hande\utility" />
+      <recent name="C:\MICROSERVİCES\Microservice\main-service\src\main\java\com\hande" />
+      <recent name="C:\MICROSERVİCES\Microservice\main-service\src\main" />
+      <recent name="C:\MICROSERVİCES\Microservice\user-service\src\main" />
+      <recent name="C:\MICROSERVİCES\Microservice\user-service\src\main\java\com\hande" />
+      <recent name="C:\MICROSERVİCES\Microservice\auth-service\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hande.repository" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hande.constants" />
+      <recent name="com.hande.dto.request" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+    <configuration name="Microservice [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservice:auth-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/auth-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="AuthService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservice.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.AuthServiceApplication" />
@@ -106,6 +270,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservice.auth-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.AuthServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hande.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservice.main-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.MainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hande.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservice.user-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.UserServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hande.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AuthServiceApplication" />
+        <item itemvalue="Spring Boot.UserServiceApplication" />
+        <item itemvalue="Spring Boot.MainApplication" />
+        <item itemvalue="Gradle.Microservice:auth-service [build]" />
+        <item itemvalue="Gradle.Microservice [buildDependents]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,7 +327,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664203915729</updated>
-      <workItem from="1664203917069" duration="8675000" />
+      <workItem from="1664203917069" duration="26209000" />
+      <workItem from="1664309553414" duration="3207000" />
+      <workItem from="1664360996749" duration="18328000" />
     </task>
     <servers />
   </component>
