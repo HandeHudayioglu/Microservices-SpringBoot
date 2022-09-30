@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/JwtTokenManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/hande/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/JwtTokenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/dto/request/EditProfileRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/dto/request/EditProfileRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,20 +117,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "C:/MICROSERVİCES/Microservice/config-server/src/main",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "d8053f6e166b8e057c6e2e48a64f6d8b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MICROSERVİCES/Microservice/config-server/src/main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;655cf906dfbd48e02e35d3bfd1391f63&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main" />
@@ -234,9 +231,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AuthServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.UserServiceApplication" />
-        <item itemvalue="Spring Boot.AuthServiceApplication" />
         <item itemvalue="Spring Boot.MainApplication" />
         <item itemvalue="Gradle.Microservice:auth-service [build]" />
       </list>
@@ -254,7 +251,10 @@
       <workItem from="1664309553414" duration="3207000" />
       <workItem from="1664360996749" duration="21203000" />
       <workItem from="1664398351701" duration="43000" />
-      <workItem from="1664447624240" duration="12499000" />
+      <workItem from="1664447624240" duration="13216000" />
+      <workItem from="1664534059961" duration="3699000" />
+      <workItem from="1664567023070" duration="450000" />
+      <workItem from="1664567492528" duration="40000" />
     </task>
     <servers />
   </component>

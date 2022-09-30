@@ -1,14 +1,8 @@
-server:
-  port: 9090
-
-
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/YarismaAuthDB
-    username: postgres
-    password: Hande0808
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    hibernate:
-       ddl-auto: update
-    show-sql: true
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: auth-service-application
