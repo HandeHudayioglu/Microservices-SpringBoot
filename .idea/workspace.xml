@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/hande/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/hande/controller/FallBackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/manager/IUserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/manager/IUserManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +130,7 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/MICROSERVİCES/Microservice/config-server/src/main&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;655cf906dfbd48e02e35d3bfd1391f63&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;f873c0758e9b6d7f25a4602e5d3c818a&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -139,6 +141,9 @@
       <recent name="C:\MICROSERVİCES\Microservice\user-service\src\main" />
       <recent name="C:\MICROSERVİCES\Microservice\user-service\src\main\java\com\hande" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MICROSERVİCES\Microservice\api-gateway-service\src\main" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hande.repository" />
     </key>
@@ -148,7 +153,7 @@
       <recent name="com.hande.dto.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
     <configuration name="Microservice:auth-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -169,6 +174,13 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Microservice.api-gateway-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AuthService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservice.main" />
@@ -255,6 +267,10 @@
       <workItem from="1664534059961" duration="3699000" />
       <workItem from="1664567023070" duration="450000" />
       <workItem from="1664567492528" duration="40000" />
+      <workItem from="1664567543530" duration="88000" />
+      <workItem from="1664604619486" duration="9801000" />
+      <workItem from="1664636066152" duration="8415000" />
+      <workItem from="1664646517699" duration="2239000" />
     </task>
     <servers />
   </component>
