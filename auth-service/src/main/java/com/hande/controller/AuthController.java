@@ -23,6 +23,7 @@ public class AuthController {
     private final AuthService authService;
     private final JwtTokenManager jwtTokenManager;
 
+
     //http://localhost:9999/v1/api/auth/test
     @GetMapping("/test")
     public String getTestString(){

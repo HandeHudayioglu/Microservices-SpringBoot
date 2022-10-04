@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class NewUserCreateDto {
 
-    //yeni üyelik açmış birisinin auth id bilgisinin tutulduğu alan
+                                                                                                                                                                                           //yeni üyelik açmış birisinin auth id bilgisinin tutulduğu alan
     Long authId;
     String userName;
     String email;

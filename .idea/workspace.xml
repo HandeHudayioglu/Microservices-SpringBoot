@@ -5,20 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/hande/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/java/com/hande/controller/FallBackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application0.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/java/com/handehdy/ConfigClientGitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/java/com/handehdy/controller/MyTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server-git/src/main/java/com/handehdy/ConfigServerGitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server-git/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server-git/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/CompetitionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/CompetitionQuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/QuestionGroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/CompetitionQuestionRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/CompetitionRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionGroupRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/mapper/ICompetitionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/mapper/ICompetitionQuestionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/utility/JwtTokenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secret-keys.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/deployment_auth.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/deployment_auth.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/deployment_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/deployment_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/deployment_gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/deployment_gateway.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/secret_object.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/secret_object.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/manager/IUserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/manager/IUserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/NewUserCreateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/NewUserCreateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/constants/ApiUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/AddQuestionRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/AddQuestionRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/ErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/UserManagerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/MainManagerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionQuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionQuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +79,12 @@
         <task path="$PROJECT_DIR$/auth-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/config-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/api-gateway-service">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -57,17 +103,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Microservice" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Microservice" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -79,8 +114,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -125,21 +160,26 @@
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MICROSERVİCES/Microservice/config-server/src/main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MICROSERVİCES/Microservice/config-server-git/src/main/resources&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f873c0758e9b6d7f25a4602e5d3c818a&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cd1b77b9c1bb7ccadf191cb1f83ed4fc&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main" />
-      <recent name="C:\MICROSERVİCES\Microservice\main-service\src\main\java\com\hande" />
-      <recent name="C:\MICROSERVİCES\Microservice\main-service\src\main" />
-      <recent name="C:\MICROSERVİCES\Microservice\user-service\src\main" />
-      <recent name="C:\MICROSERVİCES\Microservice\user-service\src\main\java\com\hande" />
+      <recent name="C:\MICROSERVİCES\Microservice\config-server-git\src\main\resources" />
+      <recent name="C:\MICROSERVİCES\Microservice\config-client-git\src\main" />
+      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main\resources\configyml" />
+      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main\resources" />
+      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main\resources\configymldev" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MICROSERVİCES\Microservice\api-gateway-service\src\main" />
@@ -154,10 +194,31 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
-    <configuration name="Microservice:auth-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Microservice [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/auth-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservice [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -175,9 +236,53 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Microservice [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Microservice:config-server [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="Microservice.api-gateway-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.ApiGatewayApplication" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,7 +294,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="Microservice.auth-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.AuthServiceApplication" />
       <extension name="coverage">
@@ -202,7 +308,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigClientGitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Microservice.config-client-git.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.handehdy.ConfigClientGitApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.handehdy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="Microservice.config-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.ConfigServerApplication" />
       <extension name="coverage">
@@ -215,39 +335,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Microservice.main-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.MainApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hande.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="ConfigServerGitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Microservice.config-server-git.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.handehdy.ConfigServerGitApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Microservice.main-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservice.user-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.UserServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hande.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthServiceApplication" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Spring Boot.UserServiceApplication" />
-        <item itemvalue="Spring Boot.MainApplication" />
-        <item itemvalue="Gradle.Microservice:auth-service [build]" />
+        <item itemvalue="Spring Boot.ConfigClientGitApplication" />
+        <item itemvalue="Gradle.Microservice [buildDependents]" />
+        <item itemvalue="Gradle.Microservice [build]" />
+        <item itemvalue="Gradle.Microservice [clean]" />
+        <item itemvalue="Gradle.Microservice:config-server [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +386,14 @@
       <workItem from="1664604619486" duration="9801000" />
       <workItem from="1664636066152" duration="8415000" />
       <workItem from="1664646517699" duration="2239000" />
+      <workItem from="1664649373556" duration="9355000" />
+      <workItem from="1664722071272" duration="7657000" />
+      <workItem from="1664731609144" duration="7150000" />
+      <workItem from="1664814483244" duration="5761000" />
+      <workItem from="1664820279021" duration="4811000" />
+      <workItem from="1664879713862" duration="11734000" />
+      <workItem from="1664911346115" duration="1436000" />
+      <workItem from="1664913736694" duration="911000" />
     </task>
     <servers />
   </component>
@@ -296,6 +419,10 @@
           <line>38</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

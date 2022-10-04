@@ -44,7 +44,7 @@ public class AuthService extends ServiceManager<Auth,Long> {
             else
                 auth.setRole(Roles.USER);
          save(auth);
-         userManager.newUserCreate(
+         userManager.NewUserCreate(
                  NewUserCreateDto.builder()
                          .authId(auth.getId())
                          .email(dto.getEmail())

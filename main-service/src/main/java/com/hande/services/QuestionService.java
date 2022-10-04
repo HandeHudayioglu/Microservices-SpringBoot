@@ -2,7 +2,10 @@ package com.hande.services;
 
 
 import com.hande.dto.request.AddQuestionRequestDto;
+import com.hande.dto.request.QuestionRequestDto;
+import com.hande.mapper.ICompetitionMapper;
 import com.hande.repository.QuestionRepository;
+import com.hande.repository.entity.Competition;
 import com.hande.repository.entity.Question;
 import com.hande.utility.ServiceManager;
 import org.springframework.stereotype.Service;
@@ -37,4 +40,8 @@ public class QuestionService extends ServiceManager<Question,Long> {
          */
         answerService.addQuestionAnwers(dto.getAnswers(), question.getId());
     }
+
+    //public Competition save(QuestionRequestDto dto) {
+        //return save(ICompetitionMapper.INSTANCE.toCompetition(dto));
+    //}
 }

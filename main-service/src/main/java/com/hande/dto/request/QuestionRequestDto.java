@@ -14,4 +14,5 @@ public class QuestionRequestDto {
     private int duration;
     private long creatorId;
     private int numOfAnswer;
+    private String token;
 }

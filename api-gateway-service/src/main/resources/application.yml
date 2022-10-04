@@ -15,6 +15,12 @@ spring:
           uri: ${AUTHURL}
           predicates:
             - Path=/auth/**
+        - id: auth-service-swagger
+          uri: http://localhost:9090
+          predicates:
+            - Path=/auth/swagger-ui/**
+          filters:
+            - RewritePath=/(?<segment>.*), /swagger-ui/$\{segment}
         - id: main-service
           uri: ${MAINURL}
           predicates:

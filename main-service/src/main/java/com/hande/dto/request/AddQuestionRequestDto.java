@@ -15,4 +15,5 @@ public class AddQuestionRequestDto {
 
     private QuestionRequestDto question;
     private List<AnswersRequestDto> answers;
+    private String token;
 }
