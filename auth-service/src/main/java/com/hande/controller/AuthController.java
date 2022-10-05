@@ -4,7 +4,7 @@ import com.hande.dto.request.DoLoginRequestDto;
 import com.hande.dto.request.RegisterRequestDto;
 import com.hande.repository.entity.Auth;
 import com.hande.service.AuthService;
-import com.hande.utility.JwtTokenManager;
+import com.hande.config.security.JwtTokenManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

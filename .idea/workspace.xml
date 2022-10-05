@@ -5,60 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application0.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/java/com/handehdy/ConfigClientGitApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/java/com/handehdy/controller/MyTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client-git/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-git/src/main/java/com/handehdy/ConfigServerGitApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-git/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server-git/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/CompetitionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/CompetitionQuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/controller/QuestionGroupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/CompetitionQuestionRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/CompetitionRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionGroupRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/mapper/ICompetitionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/mapper/ICompetitionQuestionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/utility/JwtTokenManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secret-keys.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hande/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/ConfigurationSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/AuthServiceSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/deployment_auth.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/deployment_auth.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/deployment_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/deployment_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/deployment_gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/deployment_gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KubernetesYMLS/secret_object.yml" beforeDir="false" afterPath="$PROJECT_DIR$/KubernetesYMLS/secret_object.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/NewUserCreateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/dto/request/NewUserCreateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/main-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/congigyml/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/constants/ApiUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/AddQuestionRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/AddQuestionRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/dto/request/QuestionRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/ErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/UserManagerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/exception/MainManagerException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionQuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionQuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/CompetitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/java/com/hande/services/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/main-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/JwtTokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +67,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -393,7 +346,7 @@
       <workItem from="1664820279021" duration="4811000" />
       <workItem from="1664879713862" duration="11734000" />
       <workItem from="1664911346115" duration="1436000" />
-      <workItem from="1664913736694" duration="911000" />
+      <workItem from="1664913736694" duration="14412000" />
     </task>
     <servers />
   </component>
@@ -414,11 +367,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/JwtTokenManager.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
           <option name="timeStamp" value="5" />
