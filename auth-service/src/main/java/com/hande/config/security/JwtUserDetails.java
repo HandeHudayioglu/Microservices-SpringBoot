@@ -2,11 +2,16 @@ package com.hande.config.security;
 
 import com.hande.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class JwtUserDetails implements UserDetailsService {
@@ -32,12 +37,16 @@ public class JwtUserDetails implements UserDetailsService {
              * kontrol edilebilmesi için bir yetki listesinin olmasına gerek avrdır.
              * bu nedenle burada USER,ADMİN gibi listeyi burda belirtmelyiz
              */
+
+            List<GrantedAuthority> authorities = new ArrayList<>();
+            authorities.add(new SimpleGrantedAuthority("USER"));
+            authorities.add(new SimpleGrantedAuthority("ADMIN"));
             return User.builder()
                     .username(authId.toString())
                     .password("")
                     .accountExpired(false)
                     .accountLocked(false)
-                    .authorities("USER")
+                    .authorities(authorities)
                     .build();
 
         }

@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/ConfigurationSpring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/AuthServiceSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/AuthImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/config/RedisConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/AuthServiceSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/AuthServiceSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/JwtTokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/constants/ApiUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/entity/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/entity/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/service/UserProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +132,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;cd1b77b9c1bb7ccadf191cb1f83ed4fc&quot;
   }
 }</component>
@@ -146,7 +156,7 @@
       <recent name="com.hande.dto.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="Microservice [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -346,7 +356,15 @@
       <workItem from="1664820279021" duration="4811000" />
       <workItem from="1664879713862" duration="11734000" />
       <workItem from="1664911346115" duration="1436000" />
-      <workItem from="1664913736694" duration="14412000" />
+      <workItem from="1664913736694" duration="14518000" />
+      <workItem from="1664988631702" duration="656000" />
+      <workItem from="1665041334860" duration="7000" />
+      <workItem from="1665049645525" duration="518000" />
+      <workItem from="1665052162752" duration="21233000" />
+      <workItem from="1665153060249" duration="8679000" />
+      <workItem from="1665242645114" duration="1000" />
+      <workItem from="1665245141675" duration="1000" />
+      <workItem from="1665245159788" duration="9503000" />
     </task>
     <servers />
   </component>
@@ -373,5 +391,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

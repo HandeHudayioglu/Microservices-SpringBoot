@@ -2,15 +2,23 @@ package com.hande.config.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.configuration.EnableGlobalAuthentication;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class AuthServiceSecurityConfig {
     /**
       Sunucunuza gelen tüm isteklerin konfigurasyonlarını burada yapıyorsunuz
      */
+
+    @Bean
+    JwtTokenFilter getJwtTokenFilter(){
+        return new JwtTokenFilter();
+    }
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         /**
@@ -26,7 +34,7 @@ public class AuthServiceSecurityConfig {
          * 3-pernitAll --> kimlik doğrulamasına tabi tutma
          */
         http.authorizeRequests()
-                .antMatchers("/v3/api-docs/**","/swagger-ui/**").permitAll()
+                .antMatchers("/v3/api-docs/**","/swagger-ui/**","/v1/api/auth/doLogin","/v1/api/auth/register").permitAll()
                 .anyRequest().authenticated();
 
         /**
@@ -39,7 +47,7 @@ public class AuthServiceSecurityConfig {
          * mekanizması buraya işlenmelidir
          */
 
-        http.addFilterBefore(new JwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(getJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         /**
          *gelen isteği yeni kurguladığımız hali ile springe iletiyoruz

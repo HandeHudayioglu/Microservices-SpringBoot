@@ -29,7 +29,7 @@ public class JwtTokenManager {
                     .withAudience()
                     .withClaim("id",id)
                     .withIssuer("eda")                                                                                                                                //ihtiyacımız olan parametreyi koyduk, id ye göre token vereceğiz withIssuer("hande") de diyebilirdik
-                    .withExpiresAt(new Date(System.currentTimeMillis()+1000*60*5))                                                                  //bu tokenın geçerli olduğu zaman
+                    .withExpiresAt(new Date(System.currentTimeMillis()+1000*60*15))                                                                  //bu tokenın geçerli olduğu zaman
                     .withIssuedAt(new Date()) //oluşturulduğu zaman
                     .sign(Algorithm.HMAC256(sifreAnahtari));                                                                                                        //şifrenin kolay kırılmaması için zor bişey girilmeli yukarıda yorum satırında yazılan gibi
             return Optional.of(token);

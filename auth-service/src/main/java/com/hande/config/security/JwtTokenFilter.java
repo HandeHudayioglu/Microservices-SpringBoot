@@ -1,7 +1,11 @@
 package com.hande.config.security;
 
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -11,11 +15,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Optional;
-
-@RequiredArgsConstructor
 public class JwtTokenFilter extends OncePerRequestFilter {
-
-    private final JwtTokenManager jwtTokenManager;
+    @Autowired
+    private JwtTokenManager jwtTokenManager;
+    @Autowired
+    private JwtUserDetails jwtUserDetails;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -26,6 +30,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
          * bu bilgiyi alıyorum, bu bilgi içinde Bearer ile başlayan bir token bilgisi olmalıdır.
          */
         final String authorizationHeader = request.getHeader("Authorization");
+        //final String getBodyToken = request.getParameter("Token");
 
         /**
          * gelen string ve request içindeki oturum bilgisini kontrol ederek işleme devam ediyorum
@@ -35,16 +40,22 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().getAuthentication() == null) {
             String token = authorizationHeader.substring(7);
 
-            Optional<Long> userId = jwtTokenManager.getUserId(token);
-            if(userId.isPresent()) {
+            Optional<Long> authId = jwtTokenManager.getUserId(token);
+            if(authId.isPresent()) {
                 /**
                  * Spring için gerekli olan oturum kullanıcısının tanımlanması gereklidir.
                  *  Bunu spring UserDetails sınıfından türetilmiş özelleştirilmiş bir kullanıcının
                  *  oluşturularak eklenmesi gereklidir.
                  */
 
-
+                UserDetails userDetails = jwtUserDetails.loadUserByUserId(authId.get());
+                UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
+                        userDetails,null,userDetails.getAuthorities()
+                );
+                SecurityContextHolder.getContext().setAuthentication(authToken);
             }
         }
+
+        filterChain.doFilter(request,response);
     }
 }
