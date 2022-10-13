@@ -1,4 +1,4 @@
-package com.hande.config;
+package com.hande.config.redis;
 
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;

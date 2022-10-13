@@ -1,0 +1,33 @@
+type UserProfile{
+    id: ID!
+    authId: Int!
+    userName: String!
+    firstName: String!
+    lastName: String!
+    email: String!
+    phone: String!
+    photo: String!
+    address: String!
+    about: String!
+    created: Int!
+    updated: Int!
+    isActive: Boolean!
+}
+
+input UserProfileInput{
+    authId: Int
+    userName: String
+    firstName: String!
+    lastName: String!
+    email: String!
+}
+
+type Query{
+    findAll(): [UserProfile]
+    findAllByUserName(userName:String!): [UserProfile]
+    bulBakalimBunlariEmailListesiniGetir: [String!]
+}
+
+type Mutation{
+    createUserProfile(profile: UserProfileInput!): Boolean!
+

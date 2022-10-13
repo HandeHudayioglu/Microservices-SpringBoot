@@ -14,7 +14,7 @@ public class AuthImpl {
 
     private final AuthService authService;
 
-    @PostConstruct
+    //@PostConstruct
     public void init(){
         authService.register(RegisterRequestDto.builder()
                         .userName("admin")

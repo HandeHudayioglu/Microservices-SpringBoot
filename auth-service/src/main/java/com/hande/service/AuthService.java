@@ -4,6 +4,8 @@ import com.hande.dto.request.DoLoginRequestDto;
 import com.hande.dto.request.NewUserCreateDto;
 import com.hande.dto.request.RegisterRequestDto;
 import com.hande.manager.IUserManager;
+import com.hande.rabbitmq.model.CreateUser;
+import com.hande.rabbitmq.producer.CreateUserProducer;
 import com.hande.repository.IAuthRepository;
 import com.hande.repository.entity.Auth;
 import com.hande.repository.enums.Roles;
@@ -21,10 +23,13 @@ public class AuthService extends ServiceManager<Auth,Long> {
 
     private final IUserManager userManager;
 
-    public AuthService(IAuthRepository authRepository,IUserManager userManager) {
+    private final CreateUserProducer createUserProducer;
+
+    public AuthService(IAuthRepository authRepository,IUserManager userManager,CreateUserProducer createUserProducer) {
         super(authRepository);
         this.authRepository = authRepository;
         this.userManager=userManager;
+        this.createUserProducer=createUserProducer;
     }
 
     public Optional<Auth> doLogin(DoLoginRequestDto dto){
@@ -45,6 +50,8 @@ public class AuthService extends ServiceManager<Auth,Long> {
                 auth.setRole(Roles.USER);
 
          save(auth);
+         /*
+         User service e kullanıcının profilin oluşması için istek gönder
          userManager.NewUserCreate(
                  NewUserCreateDto.builder()
                          .authId(auth.getId())
@@ -52,7 +59,15 @@ public class AuthService extends ServiceManager<Auth,Long> {
                          .userName(dto.getUserName()).build()
 
          );
+         */
 
+         /* */
+         createUserProducer.sendCreateUserMessage(CreateUser.builder()
+                         .authId(auth.getId())
+                         .email(dto.getEmail())
+                         .userName(dto.getUserName())
+                         .password(dto.getPassword())
+                         .build());
          return auth;
 
 

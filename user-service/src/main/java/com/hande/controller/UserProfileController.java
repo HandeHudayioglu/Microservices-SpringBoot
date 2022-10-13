@@ -29,7 +29,7 @@ public class UserProfileController {
     private final UserProfileService userProfileService;
     private final JwtTokenManager jwtTokenManager;
 
-    Logger log = Logger.getLogger(UserProfileController.class.getName());
+    //Logger log = Logger.getLogger(UserProfileController.class.getName());
 
     @PostMapping(NEW_CREATE_USER)
     public ResponseEntity<Boolean> NewUserCreate(@RequestBody @Valid NewUserCreateDto dto){
@@ -66,6 +66,18 @@ public class UserProfileController {
                                                               @PathVariable String direction){
         return ResponseEntity.ok(userProfileService.findAllSlice(page, size,sortparameter,direction));
     }
+
+    @GetMapping("/findAllData")
+    public ResponseEntity<List<UserProfile>> findAll(){
+        Long start = System.currentTimeMillis();
+        System.out.println("Start time: " +start);
+        List<UserProfile> lists = userProfileService.findAll();
+        Long end = System.currentTimeMillis();
+        System.out.println("End Time : "+end);
+        System.out.println("Time UserService....: "+(end-start));
+        return ResponseEntity.ok(lists);
+    }
+
     @GetMapping("/redis")
     @Cacheable(value = "hello_redis")
     public String helloRedis(String message){

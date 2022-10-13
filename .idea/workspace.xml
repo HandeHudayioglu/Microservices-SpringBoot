@@ -5,22 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c2fdc3-0dc5-4f93-9da0-30fd2b2222e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/AuthImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/rabbitmq/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/rabbitmq/model/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/rabbitmq/producer/CreateUserProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/ElasticServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/config/SpringConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/controller/UserProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/exception/ElasticManagerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/exception/ErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/graphql/model/UserProfileInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/graphql/mutation/UserProfileMutationResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/graphql/query/UserProfileQueryResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/manager/IUserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/IUserProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/Attendance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/Competition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/CompetitionQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/DegreeHolders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/QuestionGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/TableAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/entity/Views.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/enums/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/repository/enums/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/service/UserProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/utility/GetAllData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/utility/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/utility/JwtTokenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/utility/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/java/com/hande/utility/StartData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-service/src/main/resources/profile.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/config/rabbit/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/rabbitmq/consumer/CreateUserConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/rabbitmq/model/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/AuthServiceSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/AuthServiceSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtTokenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/config/security/JwtUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/AuthImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/hande/utility/AuthImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/auth-service-application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/main-service-application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configyml/user-service-application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service-application.log" beforeDir="false" afterPath="$PROJECT_DIR$/user-service-application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/constants/ApiUrls.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/constants/ApiUrls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/config/RedisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/config/redis/RedisConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/controller/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/IUserProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/IUserProfileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/entity/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/repository/entity/UserProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/service/UserProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hande/utility/ServiceManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +125,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -127,36 +177,47 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MICROSERVİCES/Microservice/config-server-git/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MICROSERVİCES/Microservice/elastic-service/src/main/java/com/hande/repository/entity&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cd1b77b9c1bb7ccadf191cb1f83ed4fc&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;b9da44d8064e004235283752793c1de6&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MICROSERVİCES\Microservice\elastic-service\src\main\java\com\hande\repository\entity" />
+      <recent name="C:\MICROSERVİCES\Microservice\elastic-service\src\main\java\com\hande" />
+      <recent name="C:\MICROSERVİCES\Microservice\elastic-service\src\main" />
       <recent name="C:\MICROSERVİCES\Microservice\config-server-git\src\main\resources" />
       <recent name="C:\MICROSERVİCES\Microservice\config-client-git\src\main" />
-      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main\resources\configyml" />
-      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main\resources" />
-      <recent name="C:\MICROSERVİCES\Microservice\config-server\src\main\resources\configymldev" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MICROSERVİCES\Microservice\api-gateway-service\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hande.config.redis" />
+      <recent name="com.hande.component" />
       <recent name="com.hande.repository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hande.utility" />
+      <recent name="com.hande.rabbitmq.model" />
+      <recent name="com.hande.config.rabbit" />
+      <recent name="com.hande.repository.enums" />
+      <recent name="com.hande.repository.entity" />
       <recent name="com.hande.constants" />
-      <recent name="com.hande.dto.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="Microservice [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -305,6 +366,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElasticServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Microservice.elastic-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.ElasticServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Microservice.main-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hande.MainApplication" />
@@ -364,12 +432,19 @@
       <workItem from="1665153060249" duration="8679000" />
       <workItem from="1665242645114" duration="1000" />
       <workItem from="1665245141675" duration="1000" />
-      <workItem from="1665245159788" duration="9503000" />
+      <workItem from="1665245159788" duration="30713000" />
+      <workItem from="1665405458042" duration="7264000" />
+      <workItem from="1665428414124" duration="5488000" />
+      <workItem from="1665482209132" duration="11682000" />
+      <workItem from="1665579032768" duration="5878000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.graphql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
